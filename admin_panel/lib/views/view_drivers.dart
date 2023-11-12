@@ -4,6 +4,7 @@ import 'package:admin_panel/app_config.dart';
 import 'package:admin_panel/controllers/controllers_drivers.dart';
 import 'package:admin_panel/models/model_drivers.dart';
 import 'package:admin_panel/views/items/item_driver.dart';
+import 'package:admin_panel/views/view_map_drivers.dart';
 import 'package:admin_panel/widgets/drop_company.dart';
 import 'package:admin_panel/widgets/textfield_custom.dart';
 import 'package:flutter/material.dart';
@@ -286,6 +287,10 @@ class ViewDrivers extends StatelessWidget {
                       const SizedBox(height: 15),
                       Row(
                         children: [
+                          TextButton(onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => MapDriver()));
+                          },
+                              child: Text("Посмотреть где водитель", style: TextStyle(color:  const Color(0xff205CBE)),)),
                           const Spacer(),
                           IconButton(
                             color: const Color(0xff205CBE),

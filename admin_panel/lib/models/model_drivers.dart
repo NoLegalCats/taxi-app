@@ -1,4 +1,4 @@
-class ModelDrivers {
+ class ModelDrivers {
   int? id;
   int? idcompany;
   String? carInfo;
@@ -8,6 +8,7 @@ class ModelDrivers {
   String? aes128;
   int? idstate;
   String? name;
+
 
   int? count;
   String? color;
